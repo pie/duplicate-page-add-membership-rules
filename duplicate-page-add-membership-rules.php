@@ -52,6 +52,6 @@ if ( is_admin() ) {
 			update_option( 'wc_memberships_rules', $wc_memberships_rules );
 		}
 	}
-	add_action( 'dp_duplicate_page', __NAMESPACE__ . '\\duplicate_membership_plans', 10, 2 );
-	add_action( 'dp_duplicate_post', __NAMESPACE__ . '\\duplicate_membership_plans', 10, 2 );
+	add_action( 'dp_duplicate_page', __NAMESPACE__ . '\duplicate_membership_plans', 10, 2 );
+	add_action( 'dp_duplicate_post', __NAMESPACE__ . '\duplicate_membership_plans', 10, 2 );
 }
